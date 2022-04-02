@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>VIRTUAL LAB</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+ <link rel="stylesheet" href="css.css">
+</head>
+
+<body >
+
+  <div class="w3-top"  >
+    <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;border-radius: 1rem;">
+      <h4 class="w3-bar-item " >SAF of 3-Input Even Function</h4>
+
+      <div class="w3-right w3-hide-small">
+        
+        <a href="./simulator/index.html" class="w3-bar-item w3-button " style="border-radius: 1rem;border: 10px;">
+          <h4>Simulation</h4>
+        
+        </a>
+       
+      </div>
+    </div>
+  </div>
+
+
+  
+
+  <div style="margin-top: 82px;">
+    <div class="tab" style="height: 100%;">
+      <button class="tablinks" onclick="opentab(event, 'Aim')" id="defaultOpen" >Aim</button>
+      <button class="tablinks" onclick="opentab(event, 'Theory')">Theory</button>
+      <button class="tablinks" onclick="opentab(event, 'PreTest')">Pre-Test</button>
+      <button class="tablinks" onclick="opentab(event, 'Procedure')">Procedure</button>
+      <button class="tablinks" onclick="opentab(event, 'PostTest')">Post-Test</button>
+      <button class="tablinks" onclick="opentab(event, 'Reference')">Reference</button>
+    </div>
+
+    
+<div>
+
+  <div id="Home" class="tabcontent">
+    <div class="w3-padding">
+      <div class=" w3-padding">
+        <h2>Home:</h2>
+        
+
+       
+      </div>
+    </div>
+  </div>
+
+    <div id="Aim" class="tabcontent">
+      <div class="w3-padding">
+        <div class=" w3-padding">
+          <h2>Aim:</h2>
+          <div class="w3-col m6 w3-padding-medium">
+            <p class="w3-large"> Detection of both SA0 and SA1 faults on the logic
+              circuit that represents a 3–input Even Function.</p>
+          </div>
+
+          <div class="w3-col m6 w3-padding-medium w3-hide-small">
+            <img src="./img/pic.jpeg" alt="Table Setting" width="550" height="300">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Theory" class="tabcontent">
+      <div class="w3-padding">
+        <div class=" w3-padding">
+          <h2> Theory:</h2>
+          <p class="w3-large">A fault model is an engineering model of something that could go wrong in the construction
+            or operation of a piece of equipment, A stuck-at fault is a particular fault model used by fault simulators,
+            Individual signals and pins are assumed to be stuck at Logical '1', '0' . For example, an input is tied to a
+            logical 1 state during test generation to assure that a manufacturing defect with that type of behaviour can
+            be found with a specific test pattern.
+            The even function is equal to 1 when the number of 1’s in the input combination is even. </p>
+          <p class="w3-large">The complement of an odd function is an even function. The complement of an odd function
+            (an even function) is obtained by replacing the output gate with an exclusive-NOR gate</p>
+
+          <!--truth table-->
+          <div class="w3-container w3-light-grey w3-center">
+            <p> <b>Truth table</b>
+            </p>
+            <img src="./img/tt.png" alt="Table Setting" width="200" height="250">
+            <p><b> Venn Diagram</b>
+            <p>
+              <img src="./img/theory2.png" alt="Table Setting" width="150" height="150">
+            <p><b>Minimal Terms</b></p>
+            <img src="./img/theory.png" alt="Table Setting">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="PreTest" class="tabcontent" style="padding-bottom: 32px;padding-left: 50px;padding-top:15px;">
+    
+    <h2 style="padding-bottom: 15px;">Pre-Test:</h2>
+   <div id="quiz">
+
+
+      <div class="question" style="font-size: large;">
+        1. Electronic circuits that operate on one or more input signals to produce standard output—
+      </div>
+
+      <div class="answers">
+        <label>
+          <input type="radio" name="question0" value="a">
+          a. Parallel circuits
+        </label>
+
+        <label>
+          <input type="radio" name="question0" value="b">
+          b. Logic signals
+        </label>
+
+        <label>
+          <input type="radio" name="question0" value="c">
+          c. Logic gates 
+        </label>
+
+        <label>
+          <input type="radio" name="question0" value="d">
+          d. Series circuits
+        </label>
+
+      </div>
+
+
+      <div class="question" style="font-size: large;">
+        2. Single stuck line is used for—
+      </div>
+
+      <div class="answers">
+        <label>
+          <input type="radio" name="question1" value="a">
+          a. Pre-Manufacturing testing
+        </label>
+
+        <label>
+          <input type="radio" name="question1" value="b">
+          b. Post-Manufacturing Testing
+        </label>
+
+        <label>
+          <input type="radio" name="question1" value="c">
+          c. Design Testing
+        </label>
+
+        <label>
+          <input type="radio" name="question1" value="d">
+          d. None of the above
+        </label>
+
+      </div>
+
+
+      <div class="question" style="font-size: large;">
+        3. Which of the following are universal gates?
+      </div>
+
+      <div class="answers">
+        <label>
+          <input type="radio" name="question2" value="a">
+          a. NAND, NOR
+        </label>
+
+        <label>
+          <input type="radio" name="question2" value="b">
+          b. NAND, OR
+        </label>
+
+        <label>
+          <input type="radio" name="question2" value="c">
+          c. NOT, XOR
+        </label>
+
+        <label>
+          <input type="radio" name="question2" value="d">
+          d. NONE OF THE ABOVE
+        </label>
+
+      </div>
+
+
+      <div class="question" style="font-size: large;">
+        4. Output of XOR gate is high when—
+      </div>
+
+      <div class="answers">
+        <label>
+          <input type="radio" name="question3" value="a">
+          a. Both inputs are  0 
+        </label>
+
+        <label>
+          <input type="radio" name="question3" value="b">
+          b. Both inputs are  1
+        </label>
+
+        <label>
+          <input type="radio" name="question3" value="c">
+          c. One of them is 1 other is 0 and vice versa 
+        </label>
+
+        <label>
+          <input type="radio" name="question3" value="d">
+          d. None of these
+        </label>
+
+      </div>
+
+
+      <div class="question" style="font-size: large;">
+        5. Output of E-XOR gate is high when—
+      </div>
+
+      <div class="answers">
+        <label>
+          <input type="radio" name="question4" value="a">
+          a. One input is low , other is high and vice versa.
+        </label>
+
+        <label>
+          <input type="radio" name="question4" value="b">
+          b. Only when both inputs are zero
+        </label>
+
+        <label>
+          <input type="radio" name="question4" value="c">
+          c. Either both inputs are 0 or both are 1
+        </label>
+
+        <label>
+          <input type="radio" name="question4" value="d">
+          d. Only when both inputs are 1
+        </label>
+
+      </div>
+
+
+    </div>
+    <button id="submit" class="btn btn-primary">Submit Quiz</button>
+    <div id="results"></div>
+  </div>
+
+  <script>
+    const myQuestions = [{ "question": "Half subtractor is used to perform subtraction of ____________", "answers": { "a": "2 bits", "b": "3 bits", "c": "4 bits", "d": "5 bits" }, "correctAnswer": "c" }, { "question": "For subtracting 1 from 0, we use to take a _______ from neighbouring bits.", "answers": { "a": "Carry", "b": "Borrow", "c": "Input", "d": "Output" }, "correctAnswer": "b" }, { "question": "How many outputs are required for the implementation of a subtractor?", "answers": { "a": "1", "b": "2", "c": "3", "d": "4" }, "correctAnswer": "a" }, { "question": "Let the input of a subtractor is A and B then what the output will be if A = B?", "answers": { "a": "0", "b": "1", "c": "A", "d": "B" }, "correctAnswer": "c" }, { "question": "Let A and B is the input of a subtractor then the difference output will be ___________", "answers": { "a": "A Ex-OR B", "b": "A AND B", "c": "A OR B", "d": "A Ex-NOR B" }, "correctAnswer": "c" }];
+  </script>
+  <script>
+
+    const quizContainer = document.getElementById("quiz");
+    const resultsContainer = document.getElementById("results");
+    const submitButton = document.getElementById("submit");
+
+
+    function showResults() {
+      // gather answer containers from our quiz
+      const answerContainers = quizContainer.querySelectorAll(".answers");
+      answerContainers.forEach(e => e.style.color = "black");
+
+      // keep track of user's answers
+      let numCorrect = 0;
+
+      // for each question...
+      myQuestions.forEach((currentQuestion, questionNumber) => {
+        // find selected answer
+        const answerContainer = answerContainers[questionNumber];
+        const selector = `input[name=question${questionNumber}]:checked`;
+        const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+
+        // if answer is correct
+        if (userAnswer === currentQuestion.correctAnswer) {
+          // add to the number of correct answers
+          numCorrect++;
+
+          // color the answers green
+          //answerContainers[questionNumber].style.color = "lightgreen";
+        } else {
+          // if answer is wrong or blank
+          // color the answers red
+          answerContainers[questionNumber].style.color = "red";
+        }
+      });
+
+      // show number of correct answers out of total
+      resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+    }
+
+
+    submitButton.addEventListener("click", showResults);
+
+  </script>
+  </div>
+
+  <div id="Procedure" class="tabcontent">
+    <div class="w3-container w3-padding">
+      <div class="w3-padding">
+        <h2>Procedure:</h2>
+        <pre class="w3-large">
+
+To find out the output for SA0 or SA1 faults on a specific position -
+
+Step- 1: For enabling fault at any position, I.e., faults on a, b, c, d or e
+          give the- input as 0 or 1.
+
+Step- 2: Click on SA1 or SA0 tab to select desired fault.
+
+Step- 3: Click on the "Add" button to get the results.
+
+Step- 4: For further simulation - repeat the above steps </pre>
+      </div>
+    </div>
+  </div>
+
+  <div id="PostTest" class="tabcontent" style="padding-bottom: 32px;padding-left: 50px;padding-top:15px;">
+    <h2  style="padding-bottom: 15px;">Post-Test:</h2>
+    <div id="quizt">
+
+
+      <div class="que" style="font-size: large;">
+        1. The expression of an XOR gate is —
+      </div>
+      <div class="ans">
+        <label>
+          <input type="radio" name="que0" value="a">
+          a. A’.B+A.B’
+        </label>
+    
+        <label>
+          <input type="radio" name="que0" value="b">
+          b. A.B+A’.B’
+        </label>
+    
+        <label>
+          <input type="radio" name="que0" value="c">
+          c. A.B’
+        </label>
+    
+        <label>
+          <input type="radio" name="que0" value="d">
+          d. A.A’+B.B’
+        </label>
+    
+      </div>
+    
+    
+      <div class="que" style="font-size: large;">
+        2. The expression of an EXOR gate is —
+      </div>
+    
+      <div class="ans">
+        <label>
+          <input type="radio" name="que1" value="a">
+          a. A’.B
+        </label>
+    
+        <label>
+          <input type="radio" name="que1" value="b">
+          b. A.B+A’.B’
+        </label>
+    
+        <label>
+          <input type="radio" name="que1" value="c">
+          c. A’.B+A.B’
+        </label>
+    
+        <label>
+          <input type="radio" name="que1" value="d">
+          d. A.A’+B.B’
+        </label>
+    
+      </div>
+    
+    
+      <div class="que" style="font-size: large;">
+        3. For a circuit with k lines _______ single stuck at faults is possible.
+      </div>
+    
+      <div class="ans">
+        <label>
+          <input type="radio" name="que2" value="a">
+          a. k
+        </label>
+    
+        <label>
+          <input type="radio" name="que2" value="b">
+          b. 2k
+        </label>
+    
+        <label>
+          <input type="radio" name="que2" value="c">
+          c. k/2
+        </label>
+    
+        <label>
+          <input type="radio" name="que2" value="d">
+          d. k^2
+        </label>
+    
+      </div>
+    
+    
+      <div class="que" style="font-size: large;">
+        4. When logic gates are connected to form a gating/logic network it is called as a ______ logic circuit.
+      </div>
+    
+      <div class="ans">
+        <label>
+          <input type="radio" name="que3" value="a">
+          a. Combinational
+        </label>
+    
+        <label>
+          <input type="radio" name="que3" value="b">
+          b. Sequential
+        </label>
+    
+        <label>
+          <input type="radio" name="que3" value="c">
+          c. Hardwires
+        </label>
+    
+        <label>
+          <input type="radio" name="que3" value="d">
+          d. Systematic
+        </label>
+    
+      </div>
+    
+    
+      <div class="que" style="font-size: large;">
+        5. The total number of distinct multiple stuck at faults possible in a circuit with n lines is—
+      </div>
+    
+      <div class="ans">
+        <label>
+          <input type="radio" name="que4" value="a">
+          a. 3^n
+        </label>
+    
+        <label>
+          <input type="radio" name="que4" value="b">
+          b. 3^n-1
+        </label>
+    
+        <label>
+          <input type="radio" name="que4" value="c">
+          c. 2^n-1
+        </label>
+    
+        <label>
+          <input type="radio" name="que4" value="d">
+          d. 2
+        </label>
+    
+      </div>
+    
+    
+    </div>
+    <button id="sub"  class="btn btn-primary" >Submit Quiz</button>
+    <div id="res"></div>
+    </div>
+    
+    <script>
+    const myQue = [{ "que": "Half subtractor is used to perform subtraction of ____________", "ans": { "a": "2 bits", "b": "3 bits", "c": "4 bits", "d": "5 bits" }, "correctAns": "a" }, { "que": "For subtracting 1 from 0, we use to take a _______ from neighbouring bits.", "ans": { "a": "Carry", "b": "Borrow", "c": "Input", "d": "Output" }, "correctAns": "c" }, { "que": "How many outputs are required for the implementation of a subtractor?", "ans": { "a": "1", "b": "2", "c": "3", "d": "4" }, "correctAns": "b" }, { "que": "Let the input of a subtractor is A and B then what the output will be if A = B?", "ans": { "a": "0", "b": "1", "c": "A", "d": "B" }, "correctAns": "a" }, { "que": "Let A and B is the input of a subtractor then the difference output will be ___________", "ans": { "a": "A Ex-OR B", "b": "A AND B", "c": "A OR B", "d": "A Ex-NOR B" }, "correctAns": "b" }];
+    </script>
+    <script>
+    
+    const quiztContainer = document.getElementById("quizt");
+    const resContainer = document.getElementById("res");
+    const subButton = document.getElementById("sub");
+    
+    
+    function showRes() {
+      // gather answer containers from our quiz
+      const ansContainers = quiztContainer.querySelectorAll(".ans");
+      ansContainers.forEach(e => e.style.color = "black");
+    
+      // keep track of user's answers
+      let numCor = 0;
+    
+      // for each question...
+      myQue.forEach((currentQue, queNumber) => {
+        // find selected answer
+        const ansContainer = ansContainers[queNumber];
+        const sel = `input[name=que${queNumber}]:checked`;
+        const userAns = (ansContainer.querySelector(sel) || {}).value;
+    
+        // if answer is correct
+        if (userAns === currentQue.correctAns) {
+          // add to the number of correct answers
+          numCor++;
+    
+          // color the answers green
+          //answerContainers[questionNumber].style.color = "lightgreen";
+        } else {
+          // if answer is wrong or blank
+          // color the answers red
+          ansContainers[queNumber].style.color = "red";
+        }
+      });
+    
+      // show number of correct answers out of total
+      resContainer.innerHTML = `${numCor} out of ${myQue.length}`;
+    }
+    
+    
+    subButton.addEventListener("click", showRes);
+    
+    </script>
+  </div>
+
+  <div id="Reference" class="tabcontent">
+    <div class="w3-container w3-padding">
+      <div class="w3-padding">
+        <h2 style="padding-bottom: 10px;">Reference:</h2>
+
+        <p class="w3-large">1. Verilog HDL: A Guide to Digital Design and Synthesis, Samir Palnitkar,
+          IEEE Press, 1st Edn., 2003</p>
+        <br >
+        <br >
+<br>
+<br>
+        <p class="w3-large">This experiment is developed by <b>Dr. Biswajit R. Bhowmik</b> and his UG students- NIKHIL KUMAR, MOHAMMED MANSOOR, KV HARISH BABU, and SHARAN S VAKKUND, Department of Computer Science and Engineering, National Institute of Technology Karnataka</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+  <script>
+    function opentab(evt, content) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(content).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    document.getElementById("defaultOpen").click();
+  </script>
+
+</body>
+
+</html>
